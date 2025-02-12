@@ -1,0 +1,13 @@
+[Unit]
+Description=SSL Certificate Update Daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/Cert/ssl-cert-check.sh
+Restart=always
+User=root
+WorkingDirectory=/usr/local/bin
+
+[Install]
+WantedBy=multi-user.target
