@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/opt/Cert/ssl-cert-check.sh
+ExecStart=/path/to/ssl-cert-check.sh
 Restart=always
 User=root
 WorkingDirectory=/usr/local/bin
