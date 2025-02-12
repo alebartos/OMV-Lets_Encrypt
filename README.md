@@ -11,7 +11,7 @@ __To make it a daemon follow these instructions:__
   __1)  run this command:__
       *sudo nano /etc/systemd/system/ssl-cert-check.service*
 
-  __2) copy the content of ssl-cert-check.service from this page to the new file__
+  __2) copy the content of ssl-cert-check.service from this page to the new file (remember to change *"/path/to/ssl-cert-check.service"*        with the path to your script__
      
   __3) click ctrl+o to save the file and ctrl+x to close nano__
 
