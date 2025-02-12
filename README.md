@@ -1,30 +1,30 @@
 # OMV-Lets_Encrypt
-Script and daemon to make Let's Encrypt work with OMV
+__Script and daemon to make Let's Encrypt work with OMV__
 
-This script works ONLY if you have only ONE SSL Certificate
+__This script works ONLY if you have only ONE SSL Certificate__
 
-To make it work change "/path/to/fullchain" and "/path/to/privatekey" with the actual path gived to you after you run Certbot
+__To make it work change__ "/path/to/fullchain" __and__ "/path/to/privatekey" __with the actual path gived to you after you run Certbot__
 
-Run chmod +x /path/to/ssl-cert-check.sh (change "path/to" with the actual path to the script) 
-To make it a daemon follow these instructions:
+__Run:__ chmod +x /path/to/ssl-cert-check.sh __(change__ "path/to" __with the actual path to the script)__
+__To make it a daemon follow these instructions:__
   
-  1)  run this command
+  __1)  run this command:__
       sudo nano /etc/systemd/system/ssl-cert-check.service
 
-  2) copy the content of ssl-cert-check.service from this page to the new file
+  __2) copy the content of ssl-cert-check.service from this page to the new file__
      
-  3) click ctrl+o to save the file and ctrl+x to close nano
+  __3) click ctrl+o to save the file and ctrl+x to close nano__
 
-  4) run this command
+  __4) run this command:__
      sudo systemctl daemon-reload
 
-  5) run this command to enable script at startup
+  __5) run this command to enable script at startup:__
      sudo systemctl enable ssl-cert-check.service
 
-  6) run this command to start the service
+  __6) run this command to start the service:__
      sudo systemctl start ssl-cert-check.service
 
-  7) check if service works with this command
+  __7) check if service works with this command:__
      sudo systemctl status ssl-cert-check.service
 
 Feel free to ask
